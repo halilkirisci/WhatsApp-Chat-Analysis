@@ -1,0 +1,261 @@
+9.09.2024 22:45 - Mesajlar ve aramalar uçtan uca şifrelidir. WhatsApp da dahil olmak üzere bu sohbetin dışında bulunan hiç kimse mesaj ve aramalarınızı okuyamaz ve dinleyemez. Daha fazla bilgi edinmek için dokunun.
+26.04.2024 19:20 - ‎~ Zafer ACAR "026 - Yapay Zeka Kampi" grubunu oluşturdu
+26.04.2024 19:20 - Eklendiniz
+11.09.2024 12:03 - +90 505 637 99 07: arkadaşlar transfer learning için örnek bulamıyorum acaba ismen verir misiniz birkaç örnek  image classfction a bakıyorum siteden https://python.plainenglish.io/85-data-science-projects-c03c8750599e
+11.09.2024 12:04 - +90 505 637 99 07: bayağı zaman kaybettim kaggle dan bulduklarım new notebook açmama izin vermiyor
+11.09.2024 12:08 - +90 552 564 56 61: transfer learning bir proje örneği değil aslında, siz image classification projelerinde transfer learningden yararlanarak model geliştiriyorsunuz. bu projeler arasında tek tük image classification vardı kaggle da dataset bölümüne girip image classification yazarsanız bir sürü data var
+11.09.2024 12:08 - +90 552 564 56 61: herhangi bir image classification projesini de ttansfer learning ile çözebilirsiniz
+11.09.2024 12:08 - +90 552 564 56 61: 14. gün dersindeydi yanılmıyorsam örneğini yapmıştı zafer hoca
+11.09.2024 12:10 - +90 505 637 99 07: neyse ben pek bulamadım dataseti indirmeden kaggledan yapabileceğim bulamadım Sitede de bulamadım pek
+11.09.2024 12:15 - +90 552 564 56 61: <Medya dahil edilmedi>
+11.09.2024 12:15 - +90 552 564 56 61: bunları transfer learning ile çözebilirsiniz
+11.09.2024 12:15 - +90 505 637 99 07: Haklısın teşekkürler
+11.09.2024 12:16 - +90 552 564 56 61: rica ederim
+11.09.2024 17:31 - +90 544 257 55 07: Merhaba ben CNN ödevlerini transfer learning ile de yaptım ancak accuracy çok düşük çıktı siz de nasıl durum bir yerde hata yapıorm ama bulamadım
+11.09.2024 17:52 - +90 552 564 56 61: colab de deneyin epochu yüksek tutun, layerları dondurmayı unutmayın, chat gpt ye accuracy yükseltmek için yöntemleri sorun
+11.09.2024 18:13 - +90 544 257 55 07: Şuna dikkat ettim
+11.09.2024 18:13 - +90 544 257 55 07: Zafer hocanın yaptığı modelde
+11.09.2024 18:14 - +90 544 257 55 07: Donduruyor sonrasında iki layer ekliyo son layer 1
+11.09.2024 18:14 - +90 544 257 55 07: Bunu değiştirdiği izde çıkış katmanı uyum hatası veriyor
+11.09.2024 18:15 - +90 544 257 55 07: Yani son layer katmanı kaç sınıf varsa o olmayacak mı orayı anlayamadım
+11.09.2024 18:15 - +90 544 257 55 07: Mesela 9 sınıf varsa accuracy 0.12 civarı çıkıyor
+11.09.2024 18:15 - +90 544 257 55 07: 5 sınıf varsa 0.2
+11.09.2024 18:16 - +90 544 257 55 07: Civarı
+11.09.2024 18:16 - +90 544 257 55 07: Yani sanki tek katman olduğu için çıkışta tahmin oranı da sadece sınıfların bir tanesinde doğru çıkıyor diğerlerinde yanlış olduğu için 100/5 sınıf 0.2 civarı doğruluk çıkıyo🙈🙈
+11.09.2024 18:18 - +90 544 257 55 07: Ama 5 yapınca çıkış katmanını bu sefer çıkış katman sayısı uyumsuz oluyor
+11.09.2024 18:48 - +90 552 564 56 61: targetınız kaç sınıfsa o kadar olması lazım
+11.09.2024 18:48 - +90 552 564 56 61: kaç sınıfınız var
+11.09.2024 18:48 - +90 552 564 56 61: y.value_counts() yapın
+11.09.2024 18:48 - +90 552 564 56 61: bir de activation function a dikkat edin
+11.09.2024 18:49 - +90 544 257 55 07: Taget 9 sınıf ama son layer 9 uaptığımızda çıkış hatası diyor
+11.09.2024 18:50 - +90 544 257 55 07: Hoca derste sakin cancer için iki sınıf vardı son dense layer ı 1 yapmıştı
+11.09.2024 18:50 - +90 544 257 55 07: Sistem kendisi zaten Rum yaptığımızda kaç sınıf algıladığını yazıyor orda 1 yapsak bile
+11.09.2024 18:51 - +90 552 564 56 61: 8 sınıf yapın
+11.09.2024 18:51 - +90 552 564 56 61: error da söyler neyden kaynakalndığını
+11.09.2024 18:51 - +90 544 257 55 07: Onu da denedim aslında ama birazdan ekran resmi atayım
+12.09.2024 13:27 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:27 - +90 544 257 55 07: merhaba 9 sınıflı bir modeli 8 yaptığımda veya 1 den başka ne yaparsam fotoğraftaki hatayı veriyor
+12.09.2024 13:28 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:28 - +90 552 564 56 61: çünkü acitvasyon function sigmoid değil softmax olması gerek
+12.09.2024 13:29 - +90 552 564 56 61: 2 den fazla class varsa
+12.09.2024 13:29 - +90 552 564 56 61: ve loss functionınız da categorical_crossentropy olmalı
+12.09.2024 13:30 - +90 552 564 56 61: eğer classlarınız integer ise sparse_categorical_crossenropy olmalı
+12.09.2024 13:30 - +90 552 564 56 61: entropy*
+12.09.2024 13:32 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:33 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:33 - +90 544 257 55 07: poe de yazmıştı denemiştim bunları biraz uğraştım ama olmamıştı
+12.09.2024 13:34 - +90 552 564 56 61: pixel 224 olması gerek bu arada
+12.09.2024 13:34 - +90 552 564 56 61: resnet 50 224 aşşağısını kabul etmiyor diye hatırlıyorum
+12.09.2024 13:35 - +90 544 257 55 07: çıkışı 1 yaptığımda her size için çalışıyor ama deniyorum
+12.09.2024 13:35 - +90 552 564 56 61: kodu komple chat gpt gönderip projeden 3 4 cümle ile bahseder misiniz
+12.09.2024 13:35 - +90 552 564 56 61: 1 olması saçma 1 olamaz ki 9 class varsa
+12.09.2024 13:35 - +90 552 564 56 61: çalışmaması lazım bence
+12.09.2024 13:35 - +90 552 564 56 61: baştan bir sıkıntı var
+12.09.2024 13:35 - +90 552 564 56 61: .
+12.09.2024 13:35 - +90 552 564 56 61: bunu deneyin verdiği koda bakalım
+12.09.2024 13:36 - +90 544 257 55 07: şuan oluyor hocam
+12.09.2024 13:36 - +90 544 257 55 07: bu kombinasyonu denememişim galiba
+12.09.2024 13:37 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:38 - +90 544 257 55 07: 62 de kaldı epoc sayısını artırıp bir daha deneyecem şimdi
+12.09.2024 13:41 - +90 552 564 56 61: pixel leri 224 yaptınız mı
+12.09.2024 13:41 - +90 552 564 56 61: epoch arttırın evet
+12.09.2024 13:41 - +90 505 637 99 07: Öncesinde normalize etti sanırım
+12.09.2024 13:42 - +90 552 564 56 61: normalize etmek farklı pixel size farklı
+12.09.2024 13:42 - +90 552 564 56 61: rescale neden 1/125 hocam bir de
+12.09.2024 13:42 - +90 552 564 56 61: normalde 255 yapıyorduk
+12.09.2024 13:43 - +90 544 257 55 07: pixel de sorun olmuyor 100x100 ile 17. epoc da % 80 leri buldu
+12.09.2024 13:44 - +90 552 564 56 61: ekran görüntüsü atabilir misiniz bir
+12.09.2024 13:44 - +90 544 257 55 07: ama onu da değiştirip atarım
+12.09.2024 13:44 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:44 - +90 552 564 56 61: 255 olması lazım rescaleımızın bir de
+12.09.2024 13:44 - +90 552 564 56 61: şu an model öğrenemiyor
+12.09.2024 13:44 - +90 552 564 56 61: validation accuracy önemli olan accuracy burada
+12.09.2024 13:45 - +90 552 564 56 61: validation accuracy modelin görmediği resimler üzerindeki tahminini belirten accuracy, training accruacy artıyor validation ondan hayli düşük kalıyorsa
+12.09.2024 13:45 - +90 552 564 56 61: overfitting vardır
+12.09.2024 13:45 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:46 - +90 552 564 56 61: 1024 ü 256 veya 128 yapın isterseniz
+12.09.2024 13:46 - +90 552 564 56 61: localde koşuyorsunuz uzun sürmesin
+12.09.2024 13:46 - +90 552 564 56 61: gerçi az resim varmış, kalabilir sorun yok
+12.09.2024 13:47 - +90 544 257 55 07: bir eoc 40 sn falan sürüyor bu bilgisayar biraz iyi
+12.09.2024 13:47 - +90 544 257 55 07: biter birazdan
+12.09.2024 13:47 - +90 552 564 56 61: tamamdır
+12.09.2024 13:47 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:48 - +90 544 257 55 07: accuracy ve val_accuracy aynı anda artacak loss da azalacak değil mi hocam
+12.09.2024 13:49 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:51 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:52 - +90 552 564 56 61: çok iyi şu an artış böyle debam etmesi gerek zaten çok azlardan başlayıp 80 90 lara kadar çıkması gerek
+12.09.2024 13:52 - +90 552 564 56 61: yani tek layer yeterli bence çünkü zaten ttansfer learning olduğu için çok iyi öğreniliyor resimler
+12.09.2024 13:53 - +90 552 564 56 61: belki overfitting önlemek için dropout veya batch normalization konulabilir
+12.09.2024 13:53 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 13:53 - +90 552 564 56 61: deneyebilirsiniz farklı kombinasyonlarla
+12.09.2024 13:54 - +90 505 637 99 07: Bence epoc çok etkilemiyor
+12.09.2024 13:54 - +90 544 257 55 07: bazılarında evet ama artış görünüyor ve epocyetmiyorsa artırmak gerekiyor galiba
+12.09.2024 13:59 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 14:03 - +90 552 564 56 61: overfitting durumu var gibi görünüyor tekrardan
+12.09.2024 14:03 - +90 552 564 56 61: son layerı 128 yapın bi deneyin
+12.09.2024 14:04 - +90 552 564 56 61: yada şöyle yapın, kodu kompla alıp chat gptye gönderin ve diyin ki bu modelde overfitting gözlemliyorum, bunu düzelt
+12.09.2024 14:04 - +90 552 564 56 61: diyin
+12.09.2024 14:18 - +90 544 257 55 07: epoc 40 yapmıştım 74 lere falan geldi 5 epoc kaldı bitsin bir de poe nin önerdiği odu koşturacam
+12.09.2024 14:22 - +90 544 257 55 07: <Medya dahil edilmedi>
+12.09.2024 14:22 - +90 544 257 55 07: şimdi poe nin dediğini yapıorm
+12.09.2024 14:33 - +90 552 564 56 61: bu overfitting demek
+12.09.2024 14:34 - +90 552 564 56 61: overfitting varsa ne uygulayabilirim diyin poe ya veya gpt ye
+12.09.2024 14:51 - +90 544 257 55 07: Tamamdır hocam teşekkürler
+12.09.2024 14:57 - +90 552 564 56 61: rica ederim
+12.09.2024 14:57 - +90 505 637 99 07: 👏
+12.09.2024 14:58 - +90 505 637 99 07: İnşA sertifikalarımızı alabilirissss 🌴
+14.09.2024 06:51 - +1 (310) 954-6406: 28 grubun proje sunumlarina katilmak isterseniz 9 dakika sonra basliyoruz Zoom linki: https://michigantech.zoom.us/j/84267350416
+19.09.2024 13:33 - +90 544 257 55 07: merhaba 48 sütun özellik olan ve 3 sütun tahmin edilmesi gereken bir veri var elimde regression yapacağım ancak r2 scoreu 0.90 dan yukarı çıkaramıyorum. PCA, Normalization veya scale gibi ön işlemler önerir misiniz. Performansı artırmak için ne yapmalıyım sizce ?
+19.09.2024 13:34 - +90 505 637 99 07: Log transformation yapardım ben
+19.09.2024 13:34 - +90 552 564 56 61: 90 gayet iyi bir sonuç bence
+19.09.2024 13:35 - +90 544 257 55 07: örneğin sadece kolerasyonu % 20 nin üzerinde olan özellikleri mi almalıyım yoksa bütün özellik sütunlarını kullanmalı mıyım
+19.09.2024 13:35 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:35 - +90 544 257 55 07: buradaki corelasyon sıralamasına göre konuşabiliriz.
+19.09.2024 13:36 - +90 544 257 55 07: hocam bu sonucu daha iyi hale getirmem lazım bir de burda elde ettiğim scoru 10 satırlık başka bir test verisinde kullandığımda çok düşük score alıyorum
+19.09.2024 13:36 - +90 552 564 56 61: o zaman overfitting var demektir hocam
+19.09.2024 13:37 - +90 552 564 56 61: eğer 90 r2 varsa training setinde
+19.09.2024 13:37 - +90 552 564 56 61: ve düşük sonuç alıyorsanız unseen bir datada
+19.09.2024 13:37 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:37 - +90 552 564 56 61: overfitting işareti
+19.09.2024 13:37 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:37 - +90 552 564 56 61: heatmap oluşturun birbiri ile çok yüksek korelasyonlu featureları bulun
+19.09.2024 13:38 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:38 - +90 544 257 55 07: buradaki corelasyona göre
+19.09.2024 13:38 - +90 552 564 56 61: bakın
+19.09.2024 13:38 - +90 544 257 55 07: özellikleri azaltmalı mıyım % 30 altını  silme gibi
+19.09.2024 13:39 - +90 552 564 56 61: <Medya dahil edilmedi>
+19.09.2024 13:39 - +90 552 564 56 61: bunların kendi içinde değil target ile
+19.09.2024 13:39 - +90 552 564 56 61: yüksek korelasyonu olması lazım
+19.09.2024 13:39 - +90 552 564 56 61: bunu halledicek bir yöntem bulmalısınız
+19.09.2024 13:39 - +90 552 564 56 61: yani ben böyle biliyorum
+19.09.2024 13:39 - +90 552 564 56 61: yanlış yönlendirmeyeyim
+19.09.2024 13:40 - +90 552 564 56 61: @905466630941 hocam bir bakabilir misiniz heatmape <Bu mesaj düzenlendi>
+19.09.2024 13:41 - +90 544 257 55 07: bir de hocam 3 sütunu aynı anda mı regressiona sokmalıyım sizce yoksa bunları ayırıp ayrı ayrı 3 ü için de model mi çalıştırmalıyım ?
+19.09.2024 13:41 - +90 552 564 56 61: hayır hepsi aynı anda olmaso gerekiyor
+19.09.2024 13:41 - +90 552 564 56 61: multi target regression
+19.09.2024 13:41 - +90 552 564 56 61: yapıyorsunuz
+19.09.2024 13:41 - +90 552 564 56 61: 3 ü de Target burada
+19.09.2024 13:42 - +90 552 564 56 61: algoritmalarınızı da multiregressor denen bir tool var
+19.09.2024 13:42 - +90 552 564 56 61: ondan geçirmeniz lazım yapamdıysanız
+19.09.2024 13:42 - +90 552 564 56 61: gerçi yapamdan multi target sonuç alamazsınız diye biliyorum tree based algoritmalar dışında
+19.09.2024 13:43 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:43 - +90 544 257 55 07: bu da target lardan birine göre corelasyon
+19.09.2024 13:43 - +90 552 564 56 61: feature ların kendi içinde yüksek korelasyona sahip olmaması gerekiyor diye biliyorum
+19.09.2024 13:43 - +90 552 564 56 61: yani 2 feature var diyelim hocam
+19.09.2024 13:44 - +90 544 257 55 07: mesela burda mavi renklileri silmem faydalı olur mu model için
+19.09.2024 13:44 - +90 552 564 56 61: bunlardan biri targetla %90 diğeri 80 korelasyon veriyor
+19.09.2024 13:44 - +90 552 564 56 61: ama kendi içlerinde de yüzde 99 korelasyon veriyorlar
+19.09.2024 13:44 - +90 552 564 56 61: misalen yani
+19.09.2024 13:44 - +90 552 564 56 61: o zaman birini düşürmek gerekiyor
+19.09.2024 13:44 - +90 552 564 56 61: diye biliyorum
+19.09.2024 13:44 - +90 552 564 56 61: ömer hoca daha iyi açıklayacaktır
+19.09.2024 13:45 - +90 544 257 55 07: hee anladım aslında ikisi de aynı katkıda bulunuyor target a çünkü birbirlerine benziyorlar
+19.09.2024 13:45 - +90 552 564 56 61: bir keresinde öyle bir sorun yaşamıştım öyle çözmüştük ömer hocayla
+19.09.2024 13:45 - +90 552 564 56 61: gibi evet
+19.09.2024 13:45 - +90 552 564 56 61: yani yüzde 10 altını silin ama silmeyin hepsini çünkü 0.01 de olsa
+19.09.2024 13:45 - +90 552 564 56 61: katkı gösteriyorlar
+19.09.2024 13:45 - +90 552 564 56 61: feature importance yapıyorduk hatırlarsanız
+19.09.2024 13:46 - +90 552 564 56 61: feature importance da görebiliyoruz hangi feature ne kadar katkı sağlamış
+19.09.2024 13:46 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 13:46 - +90 544 257 55 07: mesela burda saatlik yük verileri hep birbiri ile corelasyon içinde
+19.09.2024 13:47 - +90 544 257 55 07: çok bir katkı sağlamıyor bunları hep birlikte kullanmak anladığım kadarıyla
+19.09.2024 13:49 - +90 544 257 55 07: bunu hangi ders yapmıştık tam olarak hatırlıyor musunuz?
+19.09.2024 13:49 - +90 544 257 55 07: hangi özelliğin ne kadar katkı sağladığını corelasyonla görmüyor muyuz
+19.09.2024 13:49 - +90 544 257 55 07: başka nasıl görebiliriz
+19.09.2024 13:50 - +90 544 257 55 07: yani modeli çalıştırdıktan sonra hangi özellik daha çok katkı sağlamış ona bakabiliyor muyuz?
+19.09.2024 13:53 - +90 552 564 56 61: 4. gün olması lazım
+19.09.2024 13:54 - +90 552 564 56 61: classification da vardı diye hatırlıyorum
+19.09.2024 13:54 - +90 552 564 56 61: ama chat gpt sorsanız size gösterir
+19.09.2024 13:55 - +90 552 564 56 61: hayır şöyle bi model geliştiyorsunuz ya bu modele her feature ın ne kadar katkı sağladığını feature importance ile görüyoruz korelasyon target ile ilişki demek
+19.09.2024 13:55 - +90 505 524 87 27: Regressionda
+19.09.2024 13:55 - +90 505 637 99 07: Feature eng
+19.09.2024 13:55 - +90 552 564 56 61: doğrusal bir ilişki varsa korelasyon yüksek oluyor
+19.09.2024 13:55 - +90 552 564 56 61: evet feature importance ile
+19.09.2024 13:55 - +90 505 637 99 07: .10 ve yükseğini alınca benim başarı oranım artıyor
+19.09.2024 13:55 - +90 552 564 56 61: sonrasında ise kötü etkileyenleri çıkartırsak
+19.09.2024 13:55 - +90 552 564 56 61: en yüksek sonucu elde ederiz
+19.09.2024 13:57 - +90 544 257 55 07: Hocam bir de bu sütunlar kendi aralarında da corelasyonları yüksek olduğu için PCA uyguylayıp sütun sayısını düşürmeyi düşünüyorum
+19.09.2024 13:57 - +90 544 257 55 07: en başta PCA ile sütunu 10 a indirsem veya 5 sütuna sonra modeli çalıştırsam
+19.09.2024 13:57 - +90 544 257 55 07: daha mı mantıklı olur sizce
+19.09.2024 13:58 - +90 505 637 99 07: O başarı oranını etkiliyor mu bana sadece visiualization bilgisi gibi geliyor 
+Bilen varsa söyleyebilir mi
+19.09.2024 13:58 - +90 544 257 55 07: veri kaybı oluyor çok az
+19.09.2024 13:58 - +90 544 257 55 07: ama başarı oranını etkiler mi bilmiiyorum
+19.09.2024 13:58 - +90 505 637 99 07: O kadar sütunlu datalarla çalıştık @13109546406 hoca hiç öncesinde PCA yapıyoruz demedi <Bu mesaj düzenlendi>
+19.09.2024 14:00 - +90 544 257 55 07: 🤔
+19.09.2024 14:02 - +90 544 340 81 95: 9. derste pima indians datasında yaptık
+19.09.2024 14:03 - +90 505 637 99 07: PCA mi?
+19.09.2024 14:03 - +90 544 340 81 95: <Medya dahil edilmedi>
+19.09.2024 14:04 - +90 505 637 99 07: Yani bunu başarıyı arttırmak için mi yapmıştık
+19.09.2024 14:05 - +90 544 257 55 07: ben deneyip sonucu sizlerle paylaşacam hocam :)
+19.09.2024 14:05 - +90 544 340 81 95: evet Scalling-Normalization-PCA . gerçi benim scalinglerimde pek artmadı
+19.09.2024 14:06 - +90 505 637 99 07: Tamam heyecanssss ☺️😊
+19.09.2024 14:06 - +90 505 637 99 07: Saol Duduçum 😊
+19.09.2024 14:07 - +90 552 564 56 61: bence daha mantıklı olur ama ratio ya bakmayı unutmayın ve sonrasında pca sütunları ile bir daha heat map oluşturun
+19.09.2024 14:08 - +90 552 564 56 61: yine korelasyon yüksek feature var mı diye
+19.09.2024 14:19 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 14:21 - +90 505 637 99 07: Ay bu nası bişey gözlerim acıdı
+Demek böyle çıkıyor
+19.09.2024 14:22 - +90 544 257 55 07: benim modelde de sıkıntı olabilir yanlış yaptığım yerler falan
+19.09.2024 14:22 - +90 544 257 55 07: o yüzden genelleme yapmasak daha mantıklı :)
+19.09.2024 14:24 - +90 544 257 55 07: overfitting olduğunu net bir şekilde görebileceğim bir kod veya grafik var mı
+19.09.2024 14:24 - +90 505 637 99 07: Yok sanmıyorum çok yüksek çıkmış score <Bu mesaj düzenlendi>
+19.09.2024 14:25 - +90 552 564 56 61: bence güzel duruyor ama ratio baktınız mı
+19.09.2024 14:25 - +90 552 564 56 61: bu yeni pca ile oluşturlan dataset ne kadar ana data frame i yansıtıyor?
+19.09.2024 14:25 - +90 505 637 99 07: Bir de sütunla hep numaralı mı 
+String ifadeleri numara mı
+19.09.2024 14:25 - +90 552 564 56 61: 0.95 üzeri genelde yeterli oluyor
+19.09.2024 14:27 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 14:27 - +90 505 637 99 07: MaşA benim 0.85 olsa ben seviniyorum
+19.09.2024 14:27 - +90 544 257 55 07: burda veri kaybından bahsediyoruz değil mi
+19.09.2024 14:27 - +90 544 257 55 07: pca sonrası
+19.09.2024 14:32 - +90 552 564 56 61: evet çok az
+19.09.2024 14:32 - +90 552 564 56 61: pca dışında farklı yöntemler var onları deneyin
+19.09.2024 14:32 - +90 552 564 56 61: evet evet
+19.09.2024 14:32 - +90 552 564 56 61: şu an sadece yüzde 73 korunmuş
+19.09.2024 14:32 - +90 552 564 56 61: biz 95 üzeri istiyoruz
+19.09.2024 14:33 - +90 552 564 56 61: o durumlarda pca ve pcasız denemekte fayda var, daha kötü sonuç verebilir
+19.09.2024 14:43 - +90 505 637 99 07: Peki nedennnnnn?
+Bence yeter o skor
+19.09.2024 14:48 - +90 552 564 56 61: .85 de yeter zaten de yine de bir denemek lazım iki türlü de
+19.09.2024 14:48 - +90 552 564 56 61: .
+19.09.2024 16:23 - +90 544 257 55 07: tam olarak ne yapıyor bu tool ?
+19.09.2024 16:24 - +90 544 257 55 07: şöyle bir sorun yaşıyorum
+19.09.2024 16:24 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 16:25 - +90 544 257 55 07: <Medya dahil edilmedi>
+19.09.2024 16:25 - +90 544 257 55 07: bu şekilde çıkıyor
+19.09.2024 16:25 - +90 544 257 55 07: daha sonra farklı bir 10 satırlık değer için sistemin tahminini denemek istiyorum ancak shape sorunu yaşıyorum
+19.09.2024 16:26 - +90 552 564 56 61: pca yaptınız çünkü
+19.09.2024 16:27 - +90 552 564 56 61: aynı pca objecti
+19.09.2024 16:27 - +90 544 257 55 07: onu iptal ettim
+19.09.2024 16:27 - +90 552 564 56 61: diğer dataya da uygulamanız lazım
+19.09.2024 16:27 - +90 544 257 55 07: onu yapmadan
+19.09.2024 16:27 - +90 552 564 56 61: targetlaeınızı
+19.09.2024 16:27 - +90 552 564 56 61: 2 dimensional areay yapmanız lazım bir de
+19.09.2024 16:28 - +90 552 564 56 61: <Medya dahil edilmedi>
+19.09.2024 16:28 - +90 544 257 55 07: # Eğer y_train ve y_val şu an 1D bir vektör ise (örneğin, (nörnek,)), bunu şu şekilde 2D yapabiliriz:
+y_train = y_train.reshape(-1, 3)  # Her gözlem için 3 hedef sütunu olmalı
+y_val = y_val.reshape(-1, 3) 
+bu adımdan mı bahsediyorsunuz
+19.09.2024 16:28 - +90 552 564 56 61: bu şekilde veriyorsunuz x ve y yi
+19.09.2024 16:30 - +90 544 257 55 07: bunu uyguladığımda da çok saçma değerler çıkıyor r2 de
+19.09.2024 16:30 - +90 544 257 55 07: anlayamadım orasını
+19.09.2024 16:36 - +90 544 257 55 07: bu şekilde vermeden direk yaptım yine sorun yaşıyorum
+19.09.2024 16:37 - +90 544 257 55 07: r2 falan iyi çıkıyo ama başka bir test verisinde deneme işini beceremedim
+20.09.2024 22:42 - +90 544 257 55 07: İyi Akşamlar,
+Ben geçenki sorunumu hala çözemedim hocam yardımcı olabilir misiniz. 
+Bir data var elimde(29.600 satır) 48 sütun özellik 3 sütun hedef olacak şekilde derin öğrenme uyguluyorum r2 score 0.9 çıkıyor modelimi hugging face yükleyip yeni veriler ile tahmin etmesini istiyorum ancak yeni verilerde çok absürt değerler çıkıyor. 
+ Jupiter notebook da kod üzerinde yeni 10 satırlık bir test verisi için deniyorum. R² Skoru: -4072073592832.0 gibi saçma bir değer çıkıyor. Poe ile çok araştırdım ama çözemedim hatta denemek için bu on satırlık veriyi aynı veri içinden ayrı bir excel e alıp deniyorum yine saçma rakamlar veriyor. 0,90 r2 score a sahip model neden çalışmıyor anlamadım. Müsait olduğunuzda bir bakabilir miyiz???
+20.09.2024 22:45 - +90 544 257 55 07: @905466630941+90 546 663 09 41 
+@905551778914
+21.09.2024 06:51 - +1 (310) 954-6406: 29. Grup proje sunumu Zoom linki: https://michigantech.zoom.us/j/84311027525
+21.09.2024 08:31 - +1 (310) 954-6406: Bugunku sunumlarin videosu https://michigantech.zoom.us/rec/share/BouVJnd_KNaSbFrEIU9oNz85mQiH6iaeKRJyGBLeYrHFx_5K415_F17H8C4sqUlK.0C318vc5xXNyMEba
+Passcode: FZX#6a0z
+21.09.2024 10:30 - +90 505 637 99 07: Çok teşekkürler hocam 🌸
+21.09.2024 10:57 - +90 544 257 55 07: Günaydın,
+Yardım için müsait olan hocamız var mı aceba ???
+22.09.2024 21:15 - +49 177 5001798: Iyi aksamlar. Benim python iflas etti bugün. Calismyio. Hata var artik acilmaz diyor
+Acaba yeni yuklesem olurmu?
+22.09.2024 21:16 - +1 (310) 954-6406: Omer bey e sorun
+22.09.2024 21:16 - +1 (310) 954-6406: Bu mesaj silindi
+22.09.2024 21:17 - +90 505 637 99 07: Oğlunuz mu hocam çok tatlı ☺️
